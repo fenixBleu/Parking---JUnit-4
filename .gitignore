@@ -1,5 +1,7 @@
 # Ignore all .log files
 *.log
 
-# Ignore all files in the temp directory
+# Ignore all files in the bin directories
 bin/
+src/bin/
+src/test/bin/
