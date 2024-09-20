@@ -7,22 +7,15 @@
 	</classpathentry>
 	<classpathentry kind="src" path="main/java"/>
 	<classpathentry kind="src" path="test/java"/>
-	<classpathentry kind="lib" path="C:/Users/vocqu/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/vocqu/.m2/repository/com/google/guava/guava/19.0/guava-19.0-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/vocqu/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/vocqu/.m2/repository/org/json/json/20220924/json-20220924.jar"/>
 	<classpathentry kind="lib" path="C:/Users/vocqu/.m2/repository/org/json/json/20220924/json-20220924-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/vocqu/.m2/repository/com/google/inject/guice/4.1.0/guice-4.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/vocqu/.m2/repository/com/google/inject/guice/4.1.0/guice-4.1.0-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/vocqu/OneDrive/Documents/Eclipse/ict4315/external_library/hamcrest-core-1.3.jar"/>
 	<classpathentry kind="lib" path="C:/Users/vocqu/OneDrive/Documents/Eclipse/ict4315/external_library/hamcrest-core-1.3-javadoc.jar"/>
 	<classpathentry kind="lib" path="C:/Users/vocqu/OneDrive/Documents/Eclipse/ict4315/external_library/junit-4.13.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/vocqu/OneDrive/Documents/Eclipse/ict4315/external_library/junit-4.13.2-javadoc.jar"/>
 	<classpathentry kind="lib" path="C:/Users/vocqu/OneDrive/Documents/gson-2.6.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/vocqu/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/vocqu/OneDrive/Documents/Eclipse/Parking/bin/main/java"/>
-	<classpathentry kind="lib" path="C:/Users/vocqu/OneDrive/Documents/guice-7.0.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/vocqu/OneDrive/Documents/Eclipse/Parking/src/bin"/>
-	<classpathentry kind="lib" path="C:/Users/vocqu/OneDrive/Documents/junit-4.13.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -5,7 +5,7 @@
 
 package du.ict4315.parkinglot;
 
-import com.google.inject.Inject;
+//import com.google.inject.Inject;
 import du.ict4315.car.Car;
 import du.ict4315.car.CarType;
 import du.ict4315.charges.Money;
@@ -52,7 +52,7 @@ public class ParkingLot {
     
     
     
-    @Inject
+    //@Inject
     public ParkingLot(String lotId, Address address,Long rate, int capacity, boolean isDiscounted, boolean isHourly){
       
       this.lotId = lotId;

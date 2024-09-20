@@ -4,7 +4,7 @@
  */
 package du.ict4315.customer;
 
-import com.google.inject.Inject;
+//import com.google.inject.Inject;
 import java.io.Serializable;
 
 /**
@@ -19,7 +19,7 @@ public class Address implements Serializable{
     private final String state;
     private final String zipCode;
     
-    @Inject
+    //@Inject
     public Address(String streetAddress1, String streetAddress2, String city,
             String state, String zipCode){
         
