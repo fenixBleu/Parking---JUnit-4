@@ -2,6 +2,7 @@
 *.log
 
 # Ignore all files in the bin directories
-/bin
-/src/test/bin
+bin/
+src/bin/
+src/test/bin/
 /src/bin
