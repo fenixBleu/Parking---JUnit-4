@@ -135,7 +135,7 @@ public class Client {
             }
         }
         System.out.println("values: " + values);
-        //this seems to actuall create a json array, need to check more into it.
+        //this seems to actually create a json array, need to check more into it.
         JSONObject json = new JSONObject(values);
         System.out.println("JSON Object " + json);
        

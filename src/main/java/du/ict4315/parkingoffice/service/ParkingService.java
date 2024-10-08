@@ -57,8 +57,8 @@ public class ParkingService {
       
       ResponseData responseData = new ResponseData();
         
-      //System.out.println("performCommand: " + requestData);
-      //the json data is received as an array, will need to ocnvert
+      System.out.println("performCommand: " + requestData);
+      //the json data is received as an array, will need to convert
       JSONArray jsonArray = new JSONArray(requestData);
         
       //JSONObject jsonObject = new JSONObject(requestData);
@@ -79,6 +79,8 @@ public class ParkingService {
       } catch (NoSuchMethodException | SecurityException | IllegalAccessException |
           IllegalArgumentException | InvocationTargetException ex) {
         Logger.getLogger(ParkingService.class.getName()).log(Level.SEVERE, null, ex);
+        responseData.setSuccess(false);
+        
       }
        
       return responseData;

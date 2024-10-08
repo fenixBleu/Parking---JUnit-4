@@ -49,7 +49,7 @@ public class ClientHandler implements Runnable, Cloneable {
                 output = service.handleInput(inStream);
                 //output = 
                     //service.handleInput(inStream);
-                //System.out.println("data recieved: " + output);
+                //System.out.println("data received: " + output);
             } catch (RuntimeException ex) {
                 ex.printStackTrace();
                output = new ResponseData(false, ex.getLocalizedMessage(), null);
