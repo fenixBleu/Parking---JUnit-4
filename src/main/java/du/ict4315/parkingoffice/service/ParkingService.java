@@ -78,8 +78,23 @@ public class ParkingService {
         
       } catch (NoSuchMethodException | SecurityException | IllegalAccessException |
           IllegalArgumentException | InvocationTargetException ex) {
-        Logger.getLogger(ParkingService.class.getName()).log(Level.SEVERE, null, ex);
-        responseData.setSuccess(false);
+        //Logger.getLogger(ParkingService.class.getName()).log(Level.SEVERE, null, ex.getMessage());
+    	  responseData.setSuccess(false);
+    	  
+    	  String exObj = ((Object)ex).getClass().getSimpleName();
+    	  switch (exObj) {
+    	  
+    	    case "InvocationTargetException":
+    	    	
+    	    	Logger.getLogger(ParkingService.class.getName()).log(Level.SEVERE, "Error in JSON data passed to service");
+    	    	break;
+    	    	
+		    default:
+			    break;
+    		  
+    	  
+    	  }
+    	  //Logger.getLogger(ParkingService.class.getName()).log(Level.SEVERE, command, ex.toString());
         
       }
        
