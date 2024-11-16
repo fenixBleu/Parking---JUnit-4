@@ -57,8 +57,8 @@ public class ParkingService {
       
       ResponseData responseData = new ResponseData();
         
-      //System.out.println("performCommand: " + requestData);
-      //the json data is received as an array, will need to ocnvert
+      System.out.println("performCommand: " + requestData);
+      //the json data is received as an array, will need to convert
       JSONArray jsonArray = new JSONArray(requestData);
         
       //JSONObject jsonObject = new JSONObject(requestData);
@@ -78,7 +78,24 @@ public class ParkingService {
         
       } catch (NoSuchMethodException | SecurityException | IllegalAccessException |
           IllegalArgumentException | InvocationTargetException ex) {
-        Logger.getLogger(ParkingService.class.getName()).log(Level.SEVERE, null, ex);
+        //Logger.getLogger(ParkingService.class.getName()).log(Level.SEVERE, null, ex.getMessage());
+    	  responseData.setSuccess(false);
+    	  
+    	  String exObj = ((Object)ex).getClass().getSimpleName();
+    	  switch (exObj) {
+    	  
+    	    case "InvocationTargetException":
+    	    	
+    	    	Logger.getLogger(ParkingService.class.getName()).log(Level.SEVERE, "Error in JSON data passed to service");
+    	    	break;
+    	    	
+		    default:
+			    break;
+    		  
+    	  
+    	  }
+    	  //Logger.getLogger(ParkingService.class.getName()).log(Level.SEVERE, command, ex.toString());
+        
       }
        
       return responseData;

@@ -29,6 +29,7 @@ public class ParkingCharge {
     private Instant entry;
     private Instant incurred; //exit date/time will be when charge was incurred.
     private Money amount;
+    private Long newRate = 00L;
     
    //prefer not to use no arg constructor for this
    public ParkingCharge (Instant entry, Instant exit, Permit permit, ParkingLot lot) {
@@ -61,12 +62,12 @@ public class ParkingCharge {
         if ((thisDay.getValue() < 1 || thisDay.getValue() > 5) && !specialDate){
           
           //base rate for weekends is 90%
-          lot.setRate((long)(lot.getRate().doubleValue() * 0.9));
+          lot.setCalcRate((long)(lot.getRate().doubleValue() * 0.9));
           
         } else if(specialDate) {
         
           //increase rates for special date
-          lot.setRate((long)(lot.getRate().doubleValue() * 1.1));
+        	lot.setCalcRate((long)(lot.getRate().doubleValue() * 1.1));
         
         }
             
@@ -82,7 +83,7 @@ public class ParkingCharge {
         this.incurred = exit;
         
    }
-    
+   
    // as a means to correct if a timing issue occurs 
     public void setEntry(Instant instant) {
     	

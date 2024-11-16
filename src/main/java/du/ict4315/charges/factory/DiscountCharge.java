@@ -39,7 +39,7 @@ public class DiscountCharge implements IChargeStrategy {
   @Override
   public Money calculateCharge(ParkingLot lot, Instant entry, Instant exit, Permit permit){
     
-    double cents = lot.getRate();
+    double cents = lot.getCalcRate();
     
     //just to double check, this gives the ability to mark lots as discounted and remove at will
     if (lot.getIsDiscounted()){
