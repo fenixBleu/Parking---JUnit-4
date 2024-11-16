@@ -16,9 +16,9 @@ import java.io.Serializable;
  *
  * @author Bobby Vocque
  */
-public class Car implements Serializable {
-    
-    private Permit permit;
+public class Car {
+    	
+	private Permit permit;
     private String license;
     private CarType type;
     private String ownerId;

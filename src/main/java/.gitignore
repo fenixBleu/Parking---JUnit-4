@@ -1,0 +1,9 @@
+/.metadata/
+
+# Ignore all .log files
+*.log
+
+# Ignore all files in the bin directories
+/bin
+/src/test/bin
+/src/bin
