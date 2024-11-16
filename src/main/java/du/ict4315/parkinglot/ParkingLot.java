@@ -31,11 +31,12 @@ import java.util.Iterator;
  *
  * @author Bobby Vocque
  */
-public class ParkingLot {
+public class ParkingLot implements Cloneable {
    
     private String lotId;
     private Address address;
     private Long rate;  //match cents in Money
+    private Long calcRate;  //this allows discounts to be applied dynamically without changing base rate.
     //max capacity of lot
     private int maxCapacity;
     private int remainingCapacity = 2;
@@ -72,7 +73,12 @@ public class ParkingLot {
       registerObserver(observer);
       
     }
-    public void setCharges(ParkingCharge charge){
+    public Object clone() throws CloneNotSupportedException {
+    	
+    	return super.clone();
+    	
+    }
+	public void setCharges(ParkingCharge charge){
         
         charges.add(charge);
     }
@@ -106,6 +112,16 @@ public class ParkingLot {
         
         return observers;
         
+    }
+    public void setCalcRate(Long rate) {
+    	
+    	this.calcRate = rate;
+    }
+    
+    public Long getCalcRate() {
+    	
+    	return calcRate;
+    	
     }
     
     public Boolean getIsDiscounted(){

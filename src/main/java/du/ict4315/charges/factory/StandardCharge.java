@@ -28,7 +28,7 @@ public class StandardCharge implements IChargeStrategy{
     
     //right now, only diff is checking whether the lot is set for discount
     
-    double cents = lot.getRate();
+    double cents = lot.getCalcRate();
     
     
     //need to ensure an hourly rate and exit time is after entry or just charge the rate
