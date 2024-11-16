@@ -268,10 +268,10 @@ public class ParkingChargeTest{
 	        System.out.println("Not Equal To Other, entry time");
 	        ParkingCharge testInstance = new ParkingCharge(incurred, exit, permit, lot);
 	        
-	        testInstance.setEntry(Instant.now().plusSeconds(15));
+	        testInstance.setIncurred(Instant.now().plusSeconds(30));
 	        
 	        
-	        assertEquals(false, instance.equals(testInstance));
+	        assertFalse(testInstance.hashCode() == instance.hashCode());
 	      
 	      
 	    }
