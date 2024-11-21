@@ -7,8 +7,8 @@ import du.ict4315.charges.ParkingCharge;
 
 public class Permit {
 	
-	  private String id;
-	  private Car car;
+	private String id;
+	private Car car;
     private LocalDate permitRegistration;
     private LocalDate permitExpiration;
     private boolean expired;
