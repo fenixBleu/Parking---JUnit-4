@@ -38,8 +38,9 @@ public class ParkingLot implements Cloneable {
     private Long rate;  //match cents in Money
     private Long calcRate;  //this allows discounts to be applied dynamically without changing base rate.
     //max capacity of lot
-    private int maxCapacity;
-    private int remainingCapacity = 2;
+    
+    private int maxCapacity; //maximum capacity of the lot
+    private int remainingCapacity = 2;  //set to two initially for testing.
     //tracking current lot occupants, this is to assist in processing timed rates 
     private List<Car> occupants = new ArrayList<>();
     private Boolean isFull;
@@ -137,12 +138,9 @@ public class ParkingLot implements Cloneable {
       } else {
         
         lotStrategy = new StandardCharge();
-      }
-    
-      
-           
+      }    
         
-      }
+    }
       
     public void setRemainingCapacity(int remaining){
         

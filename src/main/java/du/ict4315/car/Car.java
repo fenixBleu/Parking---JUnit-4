@@ -1,14 +1,16 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * 
+ * Originally developed in NetBeans
  */
+
+
 package du.ict4315.car;
 
 import java.time.LocalDate;
 import java.util.Objects;
 
-//import du.ict4315.charges.Money;
-//import du.ict4315.charges.ParkingCharge;
 import java.io.Serializable;
 
 
@@ -18,12 +20,12 @@ import java.io.Serializable;
  */
 public class Car {
     	
-	private Permit permit;
+	private Permit permit; //cannot have a permit without a vehicle, my reasoning
     private String license;
-    private CarType type;
+    private CarType type; //type is an enumerator
     private String ownerId;
     
-    
+    // Minimum items needed to define the vehicle.  We could ideally add VIN
     public Car (String ownerId, String license, CarType type){
       
       this.ownerId = ownerId;
@@ -31,7 +33,7 @@ public class Car {
       this.type = type;
       
     }
-    
+    //create new permit.  Needs date permit authorized as well as expiration.
     public void newPermit(String permit, LocalDate register,
     		LocalDate permitExpiration){
       
