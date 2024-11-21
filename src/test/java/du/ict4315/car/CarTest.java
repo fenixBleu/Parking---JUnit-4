@@ -7,6 +7,7 @@ package du.ict4315.car;
 
 import java.time.LocalDate;
 import org.junit.Test;
+import org.junit.BeforeClass;
 import static org.junit.Assert.*;
 import org.junit.FixMethodOrder;
 import org.junit.runners.MethodSorters;
@@ -21,14 +22,15 @@ import org.junit.runners.MethodSorters;
 public class CarTest {
   
    static Car testCar;
+   String ownerId, license;
+   CarType type;
   
+  //testing the use of a constructor
   public CarTest() {
-    
-    
-    //System.out.println("newCar");
-    String ownerId = "owner01";
-    String license = "cde-456";
-    CarType type = CarType.COMPACT;
+
+    ownerId = "owner01";
+    license = "cde-456";
+    type = CarType.COMPACT;
     testCar = new Car(ownerId, license, type);
     
   }
@@ -38,10 +40,8 @@ public class CarTest {
    */
   @Test
   public void testA() {
-    System.out.println("newCar");
-    String ownerId = "owner01";
-    String license = "cde-456";
-    CarType type = CarType.COMPACT;
+    //use the initial constructor values
+    
     assertEquals(ownerId, testCar.getOwnerId());
     assertEquals(license, testCar.getLicense());
     assertEquals(type, testCar.getType());

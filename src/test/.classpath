@@ -10,7 +10,7 @@
 	<classpathentry kind="lib" path="C:/Users/vocqu/OneDrive/Documents/hamcrest-core-1.3.jar"/>
 	<classpathentry kind="lib" path="C:/Users/vocqu/OneDrive/Documents/hamcrest-core-1.3-javadoc.jar"/>
 	<classpathentry kind="lib" path="C:/Users/vocqu/OneDrive/Documents/junit-4.13.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/vocqu/OneDrive/Documents/Eclipse/Parking/bin"/>
+	<classpathentry kind="lib" path="C:/Users/vocqu/OneDrive/Documents/Eclipse/Parking/bin/test/java/du/ict4315"/>
 	<classpathentry kind="lib" path="C:/Users/vocqu/OneDrive/Documents/guice-7.0.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/vocqu/.m2/repository/org/json/json/20220924/json-20220924.jar"/>
 	<classpathentry kind="lib" path="C:/Users/vocqu/.m2/repository/org/json/json/20220924/json-20220924-sources.jar"/>
